@@ -55,4 +55,13 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+    @Test
+    public void get_total_cost_of_all_items_should_be_same_as_expected() {
+    	restaurant.addToMenu("Sweet corn soup",119);
+        restaurant.addToMenu("Vegetable lasagne", 269);
+        int totalp=119+269;
+        String[] allitems={"Sweet corn soup","Vegetable lasagne"};
+        assertEquals(restaurant.getTotalItemsCost(allitems),totalp);
+    }
 }

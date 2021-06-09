@@ -32,7 +32,5 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
-    public int getTotalItemsCost(String[] allitems) {
-    	return 0;
-    }
+    
 }

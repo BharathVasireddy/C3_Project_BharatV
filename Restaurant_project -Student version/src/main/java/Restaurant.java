@@ -64,6 +64,15 @@ public class Restaurant {
                 +"Menu:"+"\n"+getMenu());
 
     }
+    
+    public int getTotalItemsCost(String[] allitems) {
+    	int totalCost=0;
+    	for(String i:allitems) {
+    		re
+    	}
+    }
+    
+    
 
     public String getName() {
         return name;
